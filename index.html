@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home page</title>
+</head>
+<body class="home">
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home_page">Home</a> </li>
+            <li><a href="#work_section">Work Experience</a> </li>
+            <li><a href="#education_bg">Education</a> </li>
+            <li><a href="#resume_section">Resume</a> </li>
+            <li><a href="#contact_me">Contact</a> </li>
+            <li class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <p>Toggle Theme</p>
+            </li>
+        </ul>
+    </nav>
+    <div id="home_page">
+        <div class="image-container">
+            <div class="image-overlay" id="more-info" style="display: none;">
+                <h2>Personal details</h2>
+                <p>Name: Krishna Reddy Syamala</p>
+                <p>Major: MS in CS</p>
+                <p>Mail: ksyamala@slu.edu</p>
+            </div>
+        <img src="home_page.jpeg" 
+        alt="profile image" class="img" width="400" height="250" style="padding-top: 80px;" onclick="toggleDetails()">
+        </div>
+
+        <p>Designed by </p>
+        <h1>
+            <span>Krishna</span>
+            <span>Reddy</span>
+            <span>Syamala</span>
+        </h1>
+
+        <div class="quote-container">
+            <blockquote class="quote">
+                "The only way to do great work is to love what you do."
+                <cite>- Steve Jobs</cite>
+            </blockquote>
+        </div>
+
+        <div class="about-content">
+            <div class="personal-details">
+                <h2>Krishna Reddy Syamala</h2>
+                <p>Email: krishnareddy.syamala@slu.edu</p>
+                <p>Languages: English, Hindi, Telugu</p>
+            </div>
+            <div class="professional-summary">
+                <h2>Professional Summary</h2>
+                <p>Enthusiastic Computer Science graduate with a strong foundation in both academic and practical aspects of technology. Actively seeking opportunities to contribute to the world of technology...</p>
+                <h3>Education</h3>
+                <p>Saint Louis University, St Louis, MO - Masters in Computer Science (August 2023)</p>
+                <p>Bharath Institute of Higher Education and Research - Bachelor of Technology in Computer Science and Engineering (CGPA : 9.2 / 10)</p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, Java</li>
+                <li>Web Technologies: HTML5, CSS3, JS</li>
+                <li>Databases: MySQL</li>
+                <li>Data Science: Data Analysis, Machine Learning, Data Visualization</li>
+                <li>Cloud Computing: Amazon Web Services (AWS)</li>
+                <li>Soft Skills: Leadership, Problem Solving, Time management, Confidence</li>
+                <li>Languages: English, Hindi, Telugu</li>
+            </ul>
+        </div>
+        
+        <div class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Frontend Fundamentals from Pirple</li>
+                <li>Problem Solving from HackerRank</li>
+                <li>Python from Kaggle</li>
+                <li>Python libraries for Data Science, SkillUp</li>
+                <li>Intro to Machine Learning from Kaggle</li>
+                <li>Intermediate Machine Learning from Kaggle</li>
+                <li>Data Visualization from Kaggle</li>
+                <li>Feature Engineering from Kaggle</li>
+            </ul>
+        </div>
+
+        <script>
+            function toggleDetails() {
+                const details = document.getElementById("more-info");
+                if (details.style.display === "none") {
+                    details.style.display = "block";
+                } else {
+                    details.style.display = "none";
+                }
+            }
+        </script>    
+    </div>
+
+    <!-- Education history section start -->
+    <section id="education_bg" style="padding-left: 30px;">
+        <h1> <em><blockquote style="text-align: center;"> Education history </blockquote> </em></h1>
+        <div class="quote-container">
+            <blockquote class="quote">
+                "Education is not just a process of imparting knowledge; it's about igniting young minds and enabling them to soar high." - APJ Abdul Kalam
+            </blockquote>
+            <cite>- APJ Abdul Kalam</cite>
+        </div><br>
+
+        <div class="education-entry">
+            <h3>Saint Louis University, St Louis, MO</h3>
+            <p>Masters in Computer Science | August 2023 - Present</p>
+        </div>
+        <div class="education-entry">
+            <h3>Bharath Institute of Higher Education and Research</h3>
+            <p>Bachelor of Technology in Computer Science and Engineering | CGPA - 9.2 / 10 | June 2022</p>
+        </div>
+        <div class="education-entry">
+            <h3>Narayana Junior College</h3>
+            <p>Maths, Physics, Chemistry | score - 937/1000 | Mar 2018</p>
+        </div>
+        <div class="education-entry">
+            <h3>Loyola public school</h3>
+            <p>Bachelor of Technology in Computer Science and Engineering | CGPA - 8.8 / 10 | Apr 2016 </p>
+        </div><br>
+    </section><br>
+
+    <!-- Resume section start  -->
+    <div id="resume_section">
+        <h1> <em><blockquote style="text-align: center;"> Resume </blockquote> </em></h1>
+        <a class="resume-button" href="https://github.com/nani1606/Resume/raw/a8b8a0211c0a30cc04f3157e5654466b05d76834/Krishna_Resume.pdf" download="Krishna_Resume.pdf">Download Resume</a>
+        <section id="resume" class="resume">
+            <div class="container">
+      
+              <div class="section-title">
+                <h2>Resume</h2>
+                <p>As a proactive and dedicated Computer Science graduate, 
+                  I bring a blend of academic excellence and practical skills to the table. 
+                  With a passion for technology and a commitment to continuous learning, 
+                  I've honed my expertise in web development, database management, and user-centric design. 
+                  My internship experiences at renowned tech firms allowed me to spearhead projects in web applications and banking systems, 
+                  showcasing my adaptability and problem-solving abilities.</p>
+              </div>
+      
+              <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                  <h3 class="resume-title">Sumary</h3>
+                  <div class="resume-item pb-0">
+                    <h4>Krishna Reddy Syamala</h4>
+                    <p><em>Enthusiastic Computer Science graduate with a strong foundation in both academic and practical aspects of technology. Eager to transition my academic knowledge into practical skills and experience, I am actively seeking opportunities to contribute to the world of technology. 
+                      My commitment to continuous learning and growth drives my enthusiasm for embracing the dynamic challenges of this ever-evolving field.</em></p>
+                      <li>One grand Boullevard, Saint Louis</li>
+                      <li>(123) 456-7891</li>
+                      <li>krishnareddy.syamala@slu.edu</li>
+                    </ul>
+                  </div>
+      
+                  <h3 class="resume-title">Education</h3>
+                  <div class="resume-item">
+                    <h4>Masters</h4>
+                    <h5>2023 - 2025</h5>
+                    <p><em>Saint Louis University, MO</em></p>
+                    <p>Masters in Computer Science major.</p>
+                  </div>
+                  <div class="resume-item">
+                    <h4>Bachelor of Technology</h4>
+                    <h5>2018 - 2022</h5>
+                    <p><em>Bharath Institute of Higher Education and Research, Tamil Nadu, IN</em></p>
+                    <p>B.Tech in Computer Science and Engineering Major.</p>
+                  </div>
+                  <div>
+                    <h3 class="resume-title">Work Experience</h3>
+                    <div class="resume-item">
+                      <h4>Web Developer, Intern</h4>
+                      <h5>2021</h5>
+                      <p><em>The Sparks Foundation, IN</em></p>
+                      <ul>
+                        <li>Developed a basic banking system website as a Web Developer Intern.</li>
+                        <li>Designed a user-friendly interface for customer interaction. </li>
+                        <li>Integrated database functionality for secure data storage and maintained transaction records.</li>
+                      </ul>
+                    </div>
+                  </div>
+              </div> 
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                  <div class="resume-item">
+                    <h4>Web Developer Intern</h4>
+                    <h5>2021 - 2022</h5>
+                    <p><em>Shiash Info Solutions, IN</em></p>
+                    <ul>
+                      <li>Developed a dynamic web application for stock management and trading involving multiple user roles.</li>
+                      <li>Created user-specific database tables to streamline interactions for different user tasks.</li>
+                      <li>Designed and implemented the process of releasing shares to the public.</li>
+                      <li>Established a secure database infrastructure using PhpMyAdmin and utilized the Django framework for development.</li>
+                    </ul>
+                  </div>
+                  <div class="resume-item">
+                    <h4>SKILLS</h4>
+                    <ul>
+                        <li>Programming Languages: Python, Java</li>
+                        <li>Web Technologies: HTML5, CSS3, JS</li>
+                        <li>Databases: MySQL</li>
+                        <li>Data Science: Data Analysis, Machine Learning, Data Visualization</li>
+                        <li>Cloud Computing: Amazon Web Services (AWS)</li>
+                        <li>Soft Skills: Leadership, Problem Solving, Time management, Confidence</li>
+                        <li>Languages: English, Hindi, Telugu</li>
+                    </ul>
+                  </div>
+                  <div class="resume-item">
+                    <h4>CERTIFICATIONS</h4>
+                    <ul>
+                        <li>Frontend Fundamentals from Pirple</li>
+                        <li>Problem Solving from HackerRank</li>
+                        <li>Python from Kaggle</li>
+                        <li>Python libraries for Data Science,SkillUp</li>
+                        <li>Intro to Machine Learning from Kaggle.</li>
+                        <li>Intermediate Machine Learning from Kaggle.</li>
+                        <li>Data Visualization from Kaggle.</li>
+                        <li>Feature Engineering from Kaggle.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+        </section><br>
+    </div>
+    <!-- Resume section end -->
+
+    <!-- Work Experience section -->
+    <div id="work_section" style="padding-left: 140px;">
+        <h1> <em><blockquote style="text-align: center;"> Work Experience </blockquote> </em></h1>
+        <div class="work-container">
+            <div class="work-entry" data-toggle="work1">
+                <h4 class="work-title">The Sparks Foundation</h4>
+                <img src="image1.jpg" width="400" height="250" class="work-image">
+                <div class="work-details" id="work1">
+                    <div class="resume-item">
+                        <h4>Web Developer, Intern</h4>
+                        <h5>July 2021 - October 2021</h5>
+                        <p><em>The Sparks Foundation, IN</em></p>
+                        <ul>
+                            <li>Developed a basic banking system website as a Web Developer Intern.</li>
+                            <li>Designed a user-friendly interface for customer interaction.</li>
+                            <li>Integrated database functionality for secure data storage and maintained transaction records.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="work-entry" data-toggle="work2">
+                <h4 class="work-title">Shiash Info Solutions</h4>
+                <img src="shiash.jpeg" width="400" height="250" class="work-image">
+                <div class="work-details" id="work2">
+                    <div class="resume-item">
+                        <h4>Intern</h4>
+                        <h5>November 2021 - February 2022</h5>
+                        <p><em>Shiash Info Solutions, IN</em></p>
+                        <ul>
+                            <li>Developed a dynamic web application for stock management and trading with distinct user roles.</li>
+                            <li>Created user-specific database tables to streamline interactions among different users.</li>
+                            <li>Designed and implemented the process of releasing shares to the public.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div><br>
+    <!-- Work section end -->
+
+    <!-- Contact section starts -->
+    <h1> <em><blockquote style="text-align: center;"> Contact  </blockquote> </em></h1>
+    <div id="contact_me">
+        <form action="https://formspree.io/f/myyqaooy" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          
+            <button type="submit">Send</button>
+          </form>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"> <img src="nav_top.png" width="30" height="30"> </button>
+
+    <footer style="text-decoration: aliceblue; text-align: center; font-family: Arial, Helvetica, sans-serif;">
+        <div class="contact_me">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email:</p>
+            <a href="mailto:krishnasyamala3@gmail.com?subject=Portfolio Inquiry&body=Hi, I came across your portfolio and wanted to get in touch.">
+            Send Email
+            </a>
+        </div>
+
+        <script src="spa.js"></script>
+        <script src="darkmode.js"></script>
+        <div class="footer-content">
+            <p>Connect with me on LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/krishna-reddy-syamala-8a24bb1b4/" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn" width="30" height="30">
+            </a>
+        </div>
+        <p>&copy; 2023 Krishna Reddy | Designed with help of bootstrap and other online sources</p>
+    </footer><br>
+</body>
+</html>
